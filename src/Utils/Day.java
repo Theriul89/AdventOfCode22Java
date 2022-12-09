@@ -1,7 +1,5 @@
 package src.Utils;
 
-import src.Utils.EZParser;
-
 import java.io.IOException;
 
 public abstract class Day {
@@ -27,6 +25,6 @@ public abstract class Day {
         }
     }
 
-    public abstract void part1() throws Exception;
-    public abstract void part2() throws Exception;
+    public String part1() throws Exception { return ""; }
+    public String part2() throws Exception { return ""; }
 }

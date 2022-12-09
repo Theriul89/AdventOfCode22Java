@@ -2,7 +2,6 @@ package src.Days;
 
 import src.Utils.Day;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class Day6 extends Day {
@@ -13,12 +12,12 @@ public class Day6 extends Day {
             return false;
         else return xd.charAt(2) != xd.charAt(3); // should be: if (xd.charAt(2)==xd.charAt(3)) return false; else return true;
     }
-    public void part1() throws Exception {
+    public String part1() throws Exception {
         String xd = input.readLine();
         int s1 = xd.length();
         while (!xd.isEmpty() && !isPacketMarker(xd))
                 xd = xd.substring(1);
-        System.out.println(s1-xd.length()+4); // xd
+        return String.valueOf(s1-xd.length()+4);
     }
 
     public boolean isMessageMarker(String xd) {
@@ -31,12 +30,12 @@ public class Day6 extends Day {
         return true;
     }
 
-    public void part2() throws Exception {
+    public String part2() throws Exception {
         String xd = input.readLine();
         int s1 = xd.length();
         while (!xd.isEmpty() && !isMessageMarker(xd)) {
             xd=xd.substring(1);
         }
-        System.out.println(s1-xd.length()+14); // xd 2.0
+        return String.valueOf(s1-xd.length()+14);
     }
 }

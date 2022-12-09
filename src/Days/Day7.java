@@ -37,12 +37,12 @@ public class Day7 extends Day {
         return wd.children;
     }
 
-    public void part1() throws Exception {
-
+    public String part1() throws Exception {
+        throw new Exception("Do later");
     }
 
-    public void part2() throws Exception {
-
+    public String part2() throws Exception {
+        throw new Exception("Ask da homie");
     }
 }
 
